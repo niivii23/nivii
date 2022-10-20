@@ -1,20 +1,7 @@
-def fibbo(n): 
-    if(n<1): 
-        print("NA") 
-    elif(n==1): 
-        print(0) 
-    elif(n==2): 
-        print(0,1) 
-    else: 
-        a=0 
-        b=1 
-        print(a,end=" ") 
-        print(b,end=" ") 
-        for i in range(n-2): 
-            c = a + b 
-            print(c,end=" ") 
-            a=b 
-            b=c 
+n = int(input("Enter the number to be divisible by").strip()) 
+l_range = int(input("Enter the lower limit of range.").strip()) 
+u_range = int(input("Enter the upper limit of range.").strip()) 
  
-n = int(input("Enter n:")) 
-fibbo(n) 
+for i in range(l_range, u_range): 
+  if i % n == 0:  
+    print(i) 
